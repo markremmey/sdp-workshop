@@ -1,4 +1,4 @@
-# Workshop : Analyze documents with Form Recognizer and Business Process Automation Accelerator (BPA)
+# Workshop: Analyze documents with Form Recognizer and Business Process Automation Accelerator (BPA)
 
 ### Overview
 
