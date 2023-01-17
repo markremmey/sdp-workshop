@@ -17,7 +17,7 @@ Azure Form Recognizer is a cloud-based Azure Applied AI Service that uses machin
 Manually developing end-to-end solutions for business users may be costly and resource intensive. This accelerator provides a no code Studio for users to quickly build complex, multi-stage AI pipelines across multiple Azure AI and ML Services. Users can select, and stack, AI/ML Services from across Azure Cognitive Services (Speech, Language, Form Recognizer, ReadAPI), Azure Machine Learning into a single, fully integrated pipeline. Integration between services is automated by BPA, and once deployed, a web app is created. This customizable UI* provides and drag-n-drop interface for end users to build multi service pipelines. Finally, the user-created pipeline is triggered as soon as the first input file(s) are uploaded, storing the results in a document database.
 
 ### Goals
-* Understand key concepts of Form Recognizer and understand how to leverage BPA accelerator 
+* Understand key concepts of Form Recognizer and understand how to leverage BPA accelerator in conjunction with Form Recognizer and other services 
 
 
 ### Agenda 
