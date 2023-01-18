@@ -34,5 +34,34 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
     Click on the URL and this will launch the accelerator
     ![swaurl.png](/images/swaurl.png)
 
-1. This is the home page of the Accelerator
+1. This is the home page of the Accelerator. Click on Configure a new pipeline
     ![BPAHomepage.png](/images/BPAHomepage.png)
+
+1. Give a name for the pipeline and click on create 
+     ![createnewpipeline.png](/images/createnewpipeline.png)
+
+1. Select **PDF Document**
+    ![documenttype.png](/images/documenttype.png)
+
+1. Select **Form Recognizer Prebuilt Invoice Model**.
+    ![selectprebuiltinvoice.png](/images/selectprebuiltinvoice.png)
+
+1. Select **Convert the Invoice Output to a Simpler Format** in the **Pipeline Preview** page
+    ![selectconverttosimplerformat](/images/selectconverttosimplerformat.png)
+
+1.  Scroll down the page if need be and click **Done**. This step creates the pipeline
+    ![lab1pipelinefinalpage](/images/lab1pipelinefinalpage.png)
+
+1. You should be able to see the pipeline created in page that loads next 
+    ![lab1pipelinecreated.png](/images/lab1pipelinecreated.png)
+
+1. The next step is to ingest documents into this pipeline. Click on **home** and select **Ingest Documents**
+    ![home1.png](/images/home1.png)
+
+    ![ingestdocuments.png](/images/ingestdocuments.png)
+1. 
+1. 
+1. 
+
+1. 
+1. 
