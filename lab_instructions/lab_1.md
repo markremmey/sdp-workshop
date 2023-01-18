@@ -21,23 +21,47 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 ![](images/step1a-create-form-rec-resource.png)  
 ![](images/step1b-create-form-rec-resource.png)  
 ![](images/step1c-create-form-rec-resource.png)  
+
+2 - Open Form Recognizer studio to create a custom labeling project 
+
 ![](images/step2a-Create-custom-labeling-project.png)  
 ![](images/step2b-Create-custom-labeling-project.png)  
+
+Create Custom Model Project  
+
 ![](images/step2c-Create-custom-labeling-project.png)  
 ![](images/step2d-Create-custom-labeling-project.png)  
+
+Provide the storage account and container containing the forms data which you will like to label  
+
 ![](images/step2e-Create-custom-labeling-project.png)  
 ![](images/step2f-Create-custom-labeling-project.png)  
 ![](images/step2g-Create-custom-labeling-project.png)  
+
+3 - Import the Sample Data  
+
 ![](images/step3a-import-sample-data.png)  
 ![](images/step3b-import-sample-data.png)  
+
+Create a new field which you would like to label  
+
 ![](images/step3c-import-sample-data.png)  
+We created the label as "Organziation_sample"  
+
 ![](images/step3d-import-sample-data.png)  
+
+Apply the custom label to form fields  
 ![](images/step3e-import-sample-data.png)  
+Apply the labels to all forms by repeating the process in step e  
 ![](images/step3f-import-sample-data.png)  
+4 - Train the model after labelling the forms, click on Train button and provide the below information.
 ![](images/step4a-train-the-model.png)  
 ![](images/step4b-train-the-model.png)  
+5 - Test the Model on Test Data
 ![](images/step5a-test-the-model.png)  
 ![](images/step5b-test-the-model.png)  
+Load the test file and click "Analyze"  
 ![](images/step5c-test-the-model.png)  
+The results are projected with the confidence score  
 ![](images/step5d-test-the-model.png)  
 
