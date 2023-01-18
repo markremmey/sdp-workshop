@@ -17,12 +17,19 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 
 
 ### Instructions
-1 - Create Form Recognizer Resource  
+- [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
+- [Step 2 - Open Form Recognizer Studio and Create a Custom Labeling Project ](#step-2---open-form-recognizer-studio-and-create-a-custom-labeling-project )  
+- [Step 3 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
+- [Step 4 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
+- [Step 5 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
+
+
+#### Step 1 - Create a Form Recognizer Resource  
 ![](images/step1a-create-form-rec-resource.png)  
 ![](images/step1b-create-form-rec-resource.png)  
 ![](images/step1c-create-form-rec-resource.png)  
 
-2 - Open Form Recognizer studio to create a custom labeling project 
+#### Step 2 - Open Form Recognizer Studio and Create a Custom Labeling Project 
 
 ![](images/step2a-Create-custom-labeling-project.png)  
 ![](images/step2b-Create-custom-labeling-project.png)  
@@ -38,7 +45,7 @@ Provide the storage account and container containing the forms data which you wi
 ![](images/step2f-Create-custom-labeling-project.png)  
 ![](images/step2g-Create-custom-labeling-project.png)  
 
-3 - Import the Sample Data  
+#### Step 3 - Import the Sample Data  
 
 ![](images/step3a-import-sample-data.png)  
 ![](images/step3b-import-sample-data.png)  
@@ -54,10 +61,10 @@ Apply the custom label to form fields
 ![](images/step3e-import-sample-data.png)  
 Apply the labels to all forms by repeating the process in step e  
 ![](images/step3f-import-sample-data.png)  
-4 - Train the model after labelling the forms, click on Train button and provide the below information.
+#### Step 4 - Train the model after labelling the forms, click on Train button and provide the below information.
 ![](images/step4a-train-the-model.png)  
 ![](images/step4b-train-the-model.png)  
-5 - Test the Model on Test Data
+#### Step 5 - Test the Model on Test Data
 ![](images/step5a-test-the-model.png)  
 ![](images/step5b-test-the-model.png)  
 Load the test file and click "Analyze"  
