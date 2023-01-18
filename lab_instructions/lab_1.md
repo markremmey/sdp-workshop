@@ -18,10 +18,10 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 
 ### Instructions
 - [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
-- [Step 2 - Open Form Recognizer Studio and Create a Custom Labeling Project ](#step-2---open-form-recognizer-studio-and-create-a-custom-labeling-project )  
-- [Step 3 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
-- [Step 4 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
-- [Step 5 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
+- [Step 2 - Open Form Recognizer Studio and Create a Custom Labeling Project ](#step-2---open-form-recognizer-studio-and-create-a-custom-labeling-project)  
+- [Step 3 - Import the Sample Data](#step-3---import-the-sample-data)  
+- [Step 4 - Train the model after labeling the forms, click on "Train" and provide the below information](#step-4---train-the-model-after-labeling-the-forms,-click-on-"train"-and-provide-the-below-information)  
+- [Step 5 - Test the Model on Test Data](#step-5---test-the-model-on-test-data)  
 
 
 #### Step 1 - Create a Form Recognizer Resource  
@@ -61,7 +61,7 @@ Apply the custom label to form fields
 ![](images/step3e-import-sample-data.png)  
 Apply the labels to all forms by repeating the process in step e  
 ![](images/step3f-import-sample-data.png)  
-#### Step 4 - Train the model after labelling the forms, click on Train button and provide the below information.
+#### Step 4 - Train the model after labeling the forms, click on "Train" and provide the below information
 ![](images/step4a-train-the-model.png)  
 ![](images/step4b-train-the-model.png)  
 #### Step 5 - Test the Model on Test Data
