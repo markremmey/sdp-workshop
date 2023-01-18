@@ -19,3 +19,4 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 ### Instructions
 1 - Create Form Recognizer Resource  
 ![](images/step1a-create-form-rec-resource.png)  
+![](images/step1b-create-form-rec-resource.png)  
