@@ -39,5 +39,5 @@ Manually developing end-to-end solutions for business users may be costly and re
 1. ML Engineers
 
 #### Challenge Instructions
-1. [Deploy Pre-trained Model with BPA](/lab_intructions/lab_1.md)
-1. [Train and Deploy Custom Model](/lab_intructions/lab_2.md)
+1. [Deploy Pre-trained Model with BPA](lab_instructions/lab_1.md)
+1. [Train and Deploy Custom Model](lab_instructions/lab_2.md)
