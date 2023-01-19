@@ -76,7 +76,7 @@ The results are projected with the confidence score
 ![](images/step5d-test-the-model.png)  
 
 
-#### Build new pipeline with custom model module in BPA (using model ID)  
+#### Build new pipeline with custom model module in BPA  
 After you are sastified with the custom model performance, you can retrieve the model ID and use it in a new BPA pipeline with the Cusom Model module.
 
 Please repeat the steps in [Lab 1](/lab_instructions/lab_1.md) to create the following pipeline:
