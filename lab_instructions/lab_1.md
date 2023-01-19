@@ -9,6 +9,7 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 * Add an element that converts the invoice output to simpler format
 * Run the pipeline with sample document and create a Search indexer of the simplified output 
 * Utilize the Sample Search Application in the Accelerator to search on specific areas of the Invoice 
+* Utilize a pipeline to create Table index and use that in the Sample Search Application
 
 
 ### Pre-requisites
@@ -17,6 +18,8 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 
 
 ### Instructions
+
+##### Part 1
 
 1. Launch the accelerator from the resource group in the Static Web App
    1. To do this go to portal.azure.com ([Azure Portal](portal.azure.com)) from a web browser and click on resource group that is created for the purpose of this lab.
@@ -134,3 +137,26 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
      ![searchlandingpage.png](/images/searchlandingpage.png)
 
 1. You can now filter and search on items and other fields configured.
+
+
+#### Part 2
+We can extend this lab further by using Form Recognizer Layout Service and check how we can retrieve information in the form of tables using Azure Cognitive Search.
+
+1. Create a new pipeline using the layout service and extract information for table search. The steps will be similar to Steps 1-8 in **Part 1** that you just did. The pipeline page before you click **Done** at Step 7 should like like the screen shot below:
+     ![pipelinetablesearch.png](/images/pipelinetablesearch.png)
+
+1. Next step would be to ingest documents in the pipeline similar to steps 9-11 in part 1 but use the pipeline created as a part of this exercise.
+
+1. Now, we need to configure **Search Service** for table search. This can be configured similar to steps 12-17. The Query will be slightly different from what we used in step 17 and also make sure the pipeline is the name of the pipeline created for this step. Note that this query filters for **table** type 
+
+    > SELECT * from c WHERE c.id != 'pipelines' AND c.id != 'cogsearch'  AND c.pipeline = 'lab1table' AND c.type = 'table' AND c._ts >= @HighWaterMark ORDER by c._ts
+
+1. Follow steps 18-19 as before and when you get to **Customize target index** section, give the index a name that helps identify that it is a table index and then make all fields **Searchable** and **Retrievable** and the table data and id **Filterable** and **Facetable**. 
+    ![tableindexoptions.png](/images/tableindexoptions.png)
+
+1. Follow steps 24-25 and once you get a notification after clicking **Submit**, you can follow step 27 to open the **Sample Search Application** 
+
+1. Here, select the index created as a part of this exercise and also enable **Table Search**
+    ![tablesearch.png](/images/tablesearch.png)
+
+1.  Explore this UI, eg, table search configuration and filter and search on specific items to get more insights.
