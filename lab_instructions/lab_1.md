@@ -19,7 +19,7 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
 ### Instructions
 
 1. Launch the accelerator from the resource group in the Static Web App
-   1. To do this go to portal.azure.com from a web browser and click on resource group that is created for the purpose of this lab.
+   1. To do this go to portal.azure.com ([Azure Portal](portal.azure.com)) from a web browser and click on resource group that is created for the purpose of this lab.
    ![resourcegroup.png](/images/resourcegroup.png)
     Click on the resource group that is created for this lab, you should be able to see resources deployed as a part of Business Process Automation accelerator deployment.
     
@@ -59,9 +59,34 @@ In this lab, you will create a pipeline with the Business Process Automation Acc
     ![home1.png](/images/home1.png)
 
     ![ingestdocuments.png](/images/ingestdocuments.png)
-1. 
-1. 
+
+1. Select the pipeline you just created **first** from the dropdown and then drop documents from Sample Invoices folder. Use Sample 7 folder and drop a few documents from there.
+    ![selectpipeline.png](/images/selectpipeline.png)
+    You may see a prompt that there are some active documents being processed by the pipeline
+    ![activesamplesprocessing.png](/images/activesamplesprocessing.png)
+
+1. The results can be viewed in **Azure Cosmos DB Data Explorer**. To view the results, go to portal.azure.com ([Azure Portal](portal.azure.com)) again in your browser and get to the resource group like we did earlier in Step 1. There, in the resource group, click on the resource that is of type Azure Cosmos DB account
+    ![cosmosdbtype.png](/images/cosmosdbtype.png)
+
+    Go to Data Explorer
+    ![cosmosdbdataexplorer.png](/images/cosmosdbdataexplorer.png)
+
+    From there, go to items
+    ![cosmosdbitem.png](/images/cosmosdbitem.png)
+
+    Click on one of the items. This represents the output from the pipeline on the documents uploaded. Since we added the item in the pipeline  - **Convert the Invoice Output to a Simpler Format**, th output is simplified so we can create an indexer with **Search Service**.
+    ![oneitemjson.png](/images/oneitemjson.png)
+    
+    Scroll through the results and check the output and compare with the invoice uploaded.
+
+1. The get to **Search Service**. To view the results, go to portal.azure.com ([Azure Portal](portal.azure.com)) again in your browser and get to the resource group like we did earlier in Step 1. There, in the resource group, click on the resource that is of type Search Service. 
+    
+    ![searchservicetype.png](/images/searchservicetype.png)
+
 1. 
 
 1. 
+
+1. 
+
 1. 
