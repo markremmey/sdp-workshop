@@ -23,14 +23,8 @@ In this lab, you will create (train) an Azure Form Recognizer custom model using
 - [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
 - [Step 2 - Open Form Recognizer Studio and Create a Custom Labeling Project ](#step-2---open-form-recognizer-studio-and-create-a-custom-labeling-project)  
 - [Step 3 - Import the Sample Data](#step-3---import-the-sample-data)  
-- [Step 4 - Train the model after labeling the forms, click on "Train" and provide the below information](#step-4---train-the-model-after-labeling-the-forms,-click-on-"train"-and-provide-the-below-information)  
-- [Step 5 - Test the Model on Test Data](#step-5---test-the-model-on-test-data)  
-
-#### Build new pipeline with custom model module in BPA (using model ID)  
-<insert instructions/steps here>  
-
-#### Show new results in CosmosDB and search service (need to show some improvement vs. prebuilt)  
-<insert instructions/steps here>  
+- [Step 4 - Train the model](#step-4---train-the-model)  
+- [Step 5 - Test the Model on Test Data](#step-5---test-the-model-on-test-data)   
 
 #### Step 1 - Create a Form Recognizer Resource  
 ![](images/step1a-create-form-rec-resource.png)  
@@ -69,7 +63,8 @@ Apply the custom label to form fields
 ![](images/step3e-import-sample-data.png)  
 Apply the labels to all forms by repeating the process in step e  
 ![](images/step3f-import-sample-data.png)  
-#### Step 4 - Train the model after labeling the forms, click on "Train" and provide the below information
+#### Step 4 - Train the model 
+After labeling the forms, click on "Train" and provide the below information
 ![](images/step4a-train-the-model.png)  
 ![](images/step4b-train-the-model.png)  
 #### Step 5 - Test the Model on Test Data
@@ -79,6 +74,21 @@ Load the test file and click "Analyze"
 ![](images/step5c-test-the-model.png)  
 The results are projected with the confidence score  
 ![](images/step5d-test-the-model.png)  
+
+
+#### Build new pipeline with custom model module in BPA (using model ID)  
+After you are sastified with the custom model performance, you can retrieve the model ID and use it in a new BPA pipeline with the Cusom Model module.
+
+Please repeat the steps in [Lab 1](/lab_instructions/lab_1.md) to create the following pipeline:
+<insert new BPA pipeline with custom model>
+Retrieve the trained custom model ID from the Form Recognizer Studio:
+<insert screenshot for getting custom model ID>
+Then insert the ID into the BPA Custom Model module:
+<insert screenshot for using the ID in BPA pipeline>
+
+Run the pipeline and visualize results in CosmosDB and search service.
+
+
 
 ## More Resources  
 Getting Started with Form Recognizer Studio - https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/form-recognizer-studio-overview?view=form-recog-3.0.0  
