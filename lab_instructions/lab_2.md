@@ -80,15 +80,17 @@ The results are projected with the confidence score
 After you are sastified with the custom model performance, you can retrieve the model ID and use it in a new BPA pipeline with the Cusom Model module.
 
 Please repeat the steps in [Lab 1](/lab_instructions/lab_1.md) to create the following pipeline:
-<insert new BPA pipeline with custom model>
-Retrieve the trained custom model ID from the Form Recognizer Studio:
-<insert screenshot for getting custom model ID>
-Then insert the ID into the BPA Custom Model module:
-<insert screenshot for using the ID in BPA pipeline>
+![](images/step6a-deploy-custom-model.png) 
+![](images/step6b-deploy-custom-model.png) 
+![](images/step6c-deploy-custom-model.png) 
 
-Run the pipeline and visualize results in CosmosDB and search service.
+Retrieve the trained custom model ID from the Form Recognizer Studio and Enter it into the following window:
+![](images/step6d-deploy-custom-model.png) 
+![](images/step6e-deploy-custom-model.png) 
 
-
+Run the pipeline and visualize results in CosmosDB and search service as detailed in [Lab 1](/lab_instructions/lab_1.md).
+![](images/step6f-deploy-custom-model.png) 
+![](images/step6g-deploy-custom-model.png) 
 
 ## More Resources  
 Getting Started with Form Recognizer Studio - https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/form-recognizer-studio-overview?view=form-recog-3.0.0  
