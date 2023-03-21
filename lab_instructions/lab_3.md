@@ -1,7 +1,7 @@
 # Create and Deploy a OpenAI Pipeline
 
 ### Overview
-In this lab, you will create (train) an Azure Form Recognizer custom model using a sample training dataset. Custom models extract and analyze distinct data and use cases from forms and documents specific to your business. To create a custom model, you label a dataset of documents with the values you want extracted and train the model on the labeled dataset. You only need five examples of the same form or document type to get started. For this lab, you will use the dataset provided at [Custom Model Sample Files](/SampleInvoices/Custom%20Model%20Sample).
+In this lab, you will use unstructured data files like contract documents, leases, user manuals etc. to be analyzed using OCR, Azure Cognitive Search Semantic Search feature and the capabilities of Azure Open AI Large Language Models to summerize key information after converting them into more structured index files. For this lab, you will use the dataset provided at [Lab3 Sample Data](/SampleInvoices/Lab3%20Sample%20Data).
 
 
 ### Goal
