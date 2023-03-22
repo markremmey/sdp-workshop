@@ -16,7 +16,7 @@ In this lab, you will use unstructured data files like contract documents, lease
 ### Instructions
 
 
-#### Step 1 - Create a OpenAI Generic Pipeline  
+#### **Step 1a - Create a OpenAI Generic Pipeline**
 ![](images/BPAHomepage.png)  
 
 ![](images/Lab3NewPipeline.png)  
@@ -27,7 +27,7 @@ In this lab, you will use unstructured data files like contract documents, lease
 
 ![](images/Lab3OpenAIGeneric.png)
 
-### Task 1a - Get Sample Configurations from GPT-3 Playground
+### **Step 1b - Get Sample Configurations from GPT-3 Playground**
 
 ![](images/Lab3SelectOAIResource.png)  
 
@@ -35,20 +35,34 @@ In this lab, you will use unstructured data files like contract documents, lease
 
 ![](images/Lab3OAIClickGPT3.png)  
 
+At this stage, we select the model we want to use and the feature we want to leverage. In this case we will be using the Davinci model and the Summerize feature. The playground brings in a sample on the editor. Select the content of the 'Conversation' section and replace with ${document} to ensure the dynamic content is used on runtime.
+After that click on 'View Code' on top right.
+
 ![](images/Lab3OAIPlayground.png)  
+
+On the pop up, there will be drop down menu where by default 'Python' will be selected. Please change that to 'json' and Copy the code snippet.
 
 ![](images/CopySamplejson.png)  
 
+Go back to the BPA tab and replace the default text on the Generic OpenAI component opened earlier with the copied text.
+
 ![](images/Lab3OAISampleCode.png)  
+
+That completes the pipeline
 
 ![](images/Lab3FinishPipeline.png)  
 
 
-#### Step 2 - Ingest Data for the pipeline 
+#### **Step 2 - Ingest Data for the pipeline**
 
+There are 2 options for ingesting the data for the pipeline:
 
+* Use single file upload for smaller files [smaller than 4 pages]
+* Use the split document option to split the larger documents and upload the individual split files to the pipeline.
 
-#### Step 3 - Configure Search  
+![](images/Lab3IngestData.png)
+
+#### **Step 3 - Configure Search**
 1. The get to **Search Service**. To view the results, go to portal.azure.com ([Azure Portal](portal.azure.com)) again in your browser and get to the resource group like we did earlier in Step 1. There, in the resource group, click on the resource that is of type **Search Service**. 
     
     ![searchservicetype.png](/images/searchservicetype.png)
@@ -86,7 +100,7 @@ In this lab, you will use unstructured data files like contract documents, lease
 
 1. You will get a notification that the import is successfully configured
 
-#### Step 4 - Configure Semantic Search 
+#### **Step 4 - Configure Semantic Search**
 
 1. You can select Semantic Search Plan
 ![](images/Lab3SemSearchPlan.png) 
@@ -106,7 +120,7 @@ In this lab, you will use unstructured data files like contract documents, lease
 
 ![](images/Lab3SemSearchConfigSave.png)
 
-#### Step 5 - Perform Semantic Search
+#### **Step 5 - Perform Semantic Search**
 1. Now, go back to the accelerator url that you retreived from Step 1 and click on **Sample Search Application**.  
     ![](images/BPAHomepageSSA.png)
 
@@ -122,6 +136,4 @@ In this lab, you will use unstructured data files like contract documents, lease
 
 
 
-## More Resources  
-Getting Started with Form Recognizer Studio - https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/form-recognizer-studio-overview?view=form-recog-3.0.0  
-Form Recognizer Documentation - https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-invoice?view=form-recog-3.0.0
+
