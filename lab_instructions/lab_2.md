@@ -121,7 +121,7 @@ After you are sastified with the custom model performance, you can retrieve the 
     ![searchservicetype.png](/images/searchservicetype.png)
 
 1. Click on **Import Data** and Select **Azure Blob Storage** from the dropdown in datasource.
-    ![selectimportdata.png](/images/selectcontainer.png)
+    ![selectcontainer.png](/images/selectcontainer.png)
 
 1. Provide a name for datasource; change the parsing mode to **Default**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project and choose container **document**
     ![selectblobstorage.png](/images/selectblobstorage.png)
