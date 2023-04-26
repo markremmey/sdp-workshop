@@ -124,7 +124,7 @@ After you are sastified with the custom model performance, you can retrieve the 
     ![selectimportdata.png](/images/selectimportdata.png)
 
 1. Provide a name for datasource; change the parsing mode to **JSON**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project.
-    ![selectcosmosdb.png](/images/selectblobstorage.png)
+    ![selectblobstorage.png](/images/selectblobstorage.png)
 
 
 1. Keep the default for **Managed identity Authentication**, which is **None**. For **Databases** and **Collection** use the dropdown to select the same name as the Cosmos DB you selected at step 15. 
