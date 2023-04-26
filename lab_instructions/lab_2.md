@@ -137,18 +137,8 @@ After you are sastified with the custom model performance, you can retrieve the 
 1. In the next Screen(**Add cognitive skills (Optional)**), Click **Skip to: Customize Target Index**, 
       ![customizetargetindex.png](/images/customizetargetindex.png)
 
-1. In the next screen, under **aggregated results**, click on the **...** on **invoice**, click **delete** . Similarly, you can also delete **resultindexes**
-    ![deleteinvoice.png](/images/deleteinvoice.png)
-
 1. Make all fields **Retrievable** and **Searchable**
-    ![Retrievable.png](/images/Retrievable.png)
-
-1. Under **aggregatedResults**-> **simplifyInvoice** Select, customerName, invoiceId, invoicedate and dueDate to be filterable and sortable
-    ![simplifyinvoicefiltersort.png](/images/simplifyinvoicefiltersort.png)
-
-
-1. Similarly, under **aggregatedResults**-> **items**, select all fields to be filterable and sortable.
-    ![itemsfileterableandsortable.png](/images/itemsfileterableandsortable.png)
+    ![searchconfig.png](/images/searchconfig.png)
 
 1. Provide a name for the Index and click on **Next: Create an indexer**
     ![indexname.png](/images/indexname.png)
