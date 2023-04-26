@@ -34,6 +34,9 @@ In this lab, you will create (train) an Azure Form Recognizer custom model using
 #### Step 2 - Open Form Recognizer Studio and Create a Custom Labeling Project 
 
 ![](images/step2a-Create-custom-labeling-project.png)  
+
+Select the **Custom Extraction Model** from the bottom of the list of options
+
 ![](images/step2b-Create-custom-labeling-project.png)  
 
 Create Custom Model Project  
@@ -48,7 +51,7 @@ Provide the storage account and container containing the forms data which you wi
 ![](images/step2g-Create-custom-labeling-project.png)  
 
 #### Step 3 - Import the Sample Data  
-Use the data folder on VM desktop and go to sample 7 and pick 5 files
+Use the data folder on VM desktop and go to **Custom Model Sample Files** and pick 5 files marked as **train**
 ![](images/step3a-import-sample-data.png)  
 ![](images/step3b-import-sample-data.png)  
 
@@ -61,13 +64,14 @@ We created the label as "Organization_sample"
 
 Apply the custom label to form fields  
 ![](images/step3e-import-sample-data.png)  
-Apply the labels to all forms by repeating the process in step e  
+Apply the labels to all forms by repeating the process in the previous step  
 ![](images/step3f-import-sample-data.png)  
 #### Step 4 - Train the model 
-After labeling the forms, click on "Train" and provide the below information
+After labeling the forms, click on "Train" and provide the below information. Please note **Neural** method will take a longer duration to train but may be necessary in case of most unstructured files. If your data is mostly structured, you can use **Tabular** to make the training faster. For this workshop, we will use Tabular method to train the model.
 ![](images/step4a-train-the-model.png)  
 ![](images/step4b-train-the-model.png)  
 #### Step 5 - Test the Model on Test Data
+Use the sample files marked as **test** from the same location where you picked the files for training
 ![](images/step5a-test-the-model.png)  
 ![](images/step5b-test-the-model.png)  
 Load the test file and click "Analyze"  
@@ -77,19 +81,38 @@ The results are projected with the confidence score
 
 
 #### Build new pipeline with custom model module in BPA  
-After you are sastified with the custom model performance, you can retrieve the model ID and use it in a new BPA pipeline with the Cusom Model module.
+After you are sastified with the custom model performance, you can retrieve the **model ID** and use it in a new BPA pipeline with the Cusom Model module in the next step.
 
-Please repeat the steps in [Lab 1](/lab_instructions/lab_1.md) to create the following pipeline:
+#### Launch BPA Accelerator 
+1. Launch the accelerator from the resource group in the Static Web App
+   1. To do this go to portal.azure.com ([Azure Portal](portal.azure.com)) from a web browser and click on resource group that is created for the purpose of this lab.
+   ![resourcegroup.png](/images/resourcegroup.png)
+    Click on the resource group that is created for this lab, you should be able to see resources deployed as a part of Business Process Automation accelerator deployment.
+    
+    > **Note :** The names will be different in your specific labs and will not exactly match with the names of the resources or resource group
+
+    ![resourceswithinresourcegroup.png](/images/resourceswithinresourcegroup.png)
+
+    1. Look for the Static Web App under **type**. This is what we will use as a part of lab 1. Click on the Web App.
+    
+    ![staticwebappresource.png](/images/staticwebappresource.png)
+
+    Click on the URL and this will launch the accelerator
+    ![swaurl.png](/images/swaurl.png)
+
+1. Please create the following pipeline:
 ![](images/step6a-deploy-custom-model.png) 
 ![](images/step6b-deploy-custom-model.png) 
 ![](images/step6c-deploy-custom-model.png) 
 
-Retrieve the trained custom model ID from the Form Recognizer Studio and Enter it into the following window:
+1. Retrieve the trained **custom model ID** from the Form Recognizer Studio and Enter it into the following window:
 ![](images/step6d-deploy-custom-model.png) 
 ![](images/step6e-deploy-custom-model.png) 
 
-Run the pipeline and visualize results in CosmosDB and search service as detailed in [Lab 1](/lab_instructions/lab_1.md).
+1. Check the newly created pipeline use **View Pipeline** Option
 ![](images/step6f-deploy-custom-model.png) 
+
+1. Ingest data for the new pipeline from BPA homepage. Please make sure you select the Pipeline first before ingesting the files. For smaller files use the **Upload A Single Document** option. Otherwise for larger files use **Split Document By Page And Process** option.
 ![](images/step6g-deploy-custom-model.png) 
 
 ## More Resources  
