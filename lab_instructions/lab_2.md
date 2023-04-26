@@ -115,6 +115,62 @@ After you are sastified with the custom model performance, you can retrieve the 
 1. Ingest data for the new pipeline from BPA homepage. Please make sure you select the Pipeline first before ingesting the files. For smaller files use the **Upload A Single Document** option. Otherwise for larger files use **Split Document By Page And Process** option.
 ![](images/step6g-deploy-custom-model.png) 
 
+
+1. To get the **Search Service**. To view the results, go to portal.azure.com ([Azure Portal](portal.azure.com)) again in your browser and get to the resource group like we did earlier in Step 1. There, in the resource group, click on the resource that is of type **Search Service**. 
+    
+    ![searchservicetype.png](/images/searchservicetype.png)
+
+1. Click on **Import Data**. 
+    ![selectimportdata.png](/images/selectimportdata.png)
+
+1. Select **Azure Blob Storage** from the dropdown in datasource.
+    ![selectazurecosmosdb.png](/images/selectazurecosmosdb.png)
+
+1. Provide a name for datasource; change the parsing mode to **JSON**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project.
+    ![selectcosmosdb.png](/images/selectcosmosdb.png)
+
+
+1. Keep the default for **Managed identity Authentication**, which is **None**. For **Databases** and **Collection** use the dropdown to select the same name as the Cosmos DB you selected at step 15. 
+
+1. Under Query, use the following Query.  The pipeline should match the pipeline name you used in step 3
+    > SELECT * from c WHERE c.id != 'pipelines' AND c.id != 'cogsearch'  AND c.pipeline = 'lab1pipeline' AND c._ts >= @HighWaterMark ORDER by c._ts
+
+    ![importdata.png](/images/importdata.png)
+
+1. Click **Next: Add cognitive skills (Optional)**. This validates and creates the index schema. 
+
+1. In the next Screen(**Add cognitive skills (Optional)**), Click **Skip to: Customize Target Index**, 
+      ![customizetargetindex.png](/images/customizetargetindex.png)
+
+1. In the next screen, under **aggregated results**, click on the **...** on **invoice**, click **delete** . Similarly, you can also delete **resultindexes**
+    ![deleteinvoice.png](/images/deleteinvoice.png)
+
+1. Make all fields **Retrievable** and **Searchable**
+    ![Retrievable.png](/images/Retrievable.png)
+
+1. Under **aggregatedResults**-> **simplifyInvoice** Select, customerName, invoiceId, invoicedate and dueDate to be filterable and sortable
+    ![simplifyinvoicefiltersort.png](/images/simplifyinvoicefiltersort.png)
+
+
+1. Similarly, under **aggregatedResults**-> **items**, select all fields to be filterable and sortable.
+    ![itemsfileterableandsortable.png](/images/itemsfileterableandsortable.png)
+
+1. Provide a name for the Index and click on **Next: Create an indexer**
+    ![indexname.png](/images/indexname.png)
+
+1. Provide a name for the indexer and click **Submit**
+    
+    ![createindexer.png](/images/createindexer.png)
+
+1. You will get a notification that the import is successfully configured
+
+1. Now, go back to the accelerator url that you retreived from Step 1 and click on **Sample Search Application**.  
+    ![samplesearchapplication.png](/images/samplesearchapplication.png)
+
+    This opens the same search application
+     ![searchlandingpage.png](/images/searchlandingpage.png)
+
+1. You can now filter and search on items and other fields configured.
 ## More Resources  
 Getting Started with Form Recognizer Studio - https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/form-recognizer-studio-overview?view=form-recog-3.0.0  
 Form Recognizer Documentation - https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-invoice?view=form-recog-3.0.0
