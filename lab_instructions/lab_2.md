@@ -123,14 +123,14 @@ After you are sastified with the custom model performance, you can retrieve the 
 1. Click on **Import Data** and Select **Azure Blob Storage** from the dropdown in datasource.
     ![selectimportdata.png](/images/selectimportdata.png)
 
-1. Provide a name for datasource; change the parsing mode to **JSON**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project.
+1. Provide a name for datasource; change the parsing mode to **Default**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project and choose container **document**
     ![selectblobstorage.png](/images/selectblobstorage.png)
 
 1. Keep the default for **Managed identity Authentication**, which is **None**.  
 
-1. Under Query, use the following Query.  The pipeline should match the pipeline name you used in step 3
+1. On the Blob folder, provide the name of **your pipeline**
     
-    ![importdata.png](/images/importdata.png)
+    ![selectcontainerfolder.png](/images/selectcontainerfolder.png)
 
 1. Click **Next: Add cognitive skills (Optional)**. This validates and creates the index schema. 
 
