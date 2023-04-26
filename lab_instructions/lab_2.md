@@ -126,12 +126,10 @@ After you are sastified with the custom model performance, you can retrieve the 
 1. Provide a name for datasource; change the parsing mode to **JSON**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project.
     ![selectblobstorage.png](/images/selectblobstorage.png)
 
-
-1. Keep the default for **Managed identity Authentication**, which is **None**. For **Databases** and **Collection** use the dropdown to select the same name as the Cosmos DB you selected at step 15. 
+1. Keep the default for **Managed identity Authentication**, which is **None**.  
 
 1. Under Query, use the following Query.  The pipeline should match the pipeline name you used in step 3
-    > SELECT * from c WHERE c.id != 'pipelines' AND c.id != 'cogsearch'  AND c.pipeline = 'lab1pipeline' AND c._ts >= @HighWaterMark ORDER by c._ts
-
+    
     ![importdata.png](/images/importdata.png)
 
 1. Click **Next: Add cognitive skills (Optional)**. This validates and creates the index schema. 
