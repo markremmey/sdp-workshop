@@ -48,14 +48,14 @@ Provide the storage account and container containing the forms data which you wi
 ![](images/step2g-Create-custom-labeling-project.png)  
 
 #### Step 3 - Import the Sample Data  
-
+Use the data folder on VM desktop and go to sample 7 and pick 5 files
 ![](images/step3a-import-sample-data.png)  
 ![](images/step3b-import-sample-data.png)  
 
 Create a new field which you would like to label  
 
 ![](images/step3c-import-sample-data.png)  
-We created the label as "Organziation_sample"  
+We created the label as "Organization_sample"  
 
 ![](images/step3d-import-sample-data.png)  
 
