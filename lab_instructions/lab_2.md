@@ -42,7 +42,7 @@ Select the **Custom Extraction Model** from the bottom of the list of options
 Create Custom Model Project  
 
 ![](images/step2c-Create-custom-labeling-project.png)  
-![](images/step2d-Create-custom-labeling-project.png)  
+![](images/customermodelprojectcreation.png)  
 
 Provide the storage account and container containing the forms data which you will like to label  
 
@@ -120,14 +120,11 @@ After you are sastified with the custom model performance, you can retrieve the 
     
     ![searchservicetype.png](/images/searchservicetype.png)
 
-1. Click on **Import Data**. 
+1. Click on **Import Data** and Select **Azure Blob Storage** from the dropdown in datasource.
     ![selectimportdata.png](/images/selectimportdata.png)
 
-1. Select **Azure Blob Storage** from the dropdown in datasource.
-    ![selectazurecosmosdb.png](/images/selectazurecosmosdb.png)
-
 1. Provide a name for datasource; change the parsing mode to **JSON**; click on **Choose an existing connection**  for **Connection String** and select the Storage account related to your project.
-    ![selectcosmosdb.png](/images/selectcosmosdb.png)
+    ![selectblobstorage.png](/images/selectblobstorage.png)
 
 
 1. Keep the default for **Managed identity Authentication**, which is **None**. For **Databases** and **Collection** use the dropdown to select the same name as the Cosmos DB you selected at step 15. 
