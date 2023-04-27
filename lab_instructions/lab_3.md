@@ -16,7 +16,7 @@ In this lab, you will use unstructured data files like contract documents, lease
 ### Instructions
 
 
-#### **Step 1a - Create a OpenAI Generic Pipeline**
+#### **Step 1 - Create A Generic Pipeline**
 ![](images/BPAHomepage.png)  
 
 ![](images/Lab3NewPipeline.png)  
@@ -24,34 +24,6 @@ In this lab, you will use unstructured data files like contract documents, lease
 ![](images/Lab3OCR.png)  
 
 ![](images/Lab3OCR2Txt.png)  
-
-![](images/Lab3OpenAIGeneric.png)
-
-### **Step 1b - Get Sample Configurations from GPT-3 Playground**
-
-![](images/Lab3SelectOAIResource.png)  
-
-![](images/Lab3OAIExplore.png)  
-
-![](images/Lab3OAIClickGPT3.png)  
-
-At this stage, we select the model we want to use and the feature we want to leverage. In this case we will be using the Davinci model and the Summerize feature. The playground brings in a sample on the editor. Select the content of the 'Conversation' section and replace with ${document} to ensure the dynamic content is used on runtime.
-After that click on 'View Code' on top right.
-
-![](images/Lab3OAIPlayground.png)  
-
-On the pop up, there will be drop down menu where by default 'Python' will be selected. Please change that to 'json' and Copy the code snippet.
-
-![](images/CopySamplejson.png)  
-
-Go back to the BPA tab and replace the default text on the Generic OpenAI component opened earlier with the copied text.
-
-![](images/Lab3OAISampleCode.png)  
-
-That completes the pipeline
-
-![](images/Lab3FinishPipeline.png)  
-
 
 #### **Step 2 - Ingest Data for the pipeline**
 
