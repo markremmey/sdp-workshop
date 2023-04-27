@@ -87,7 +87,7 @@ There are 2 options for ingesting the data for the pipeline:
     - Select the 'content' field and any other relevant fields for Content Fields
     - Select Save
 
-![](images/Lab3SemSearchConfig.png)
+![](images/Lab3SemSearchConfig_default.png)
 
 Click on **save** again on the index screen.
 
