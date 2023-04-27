@@ -82,14 +82,14 @@ There are 2 options for ingesting the data for the pipeline:
 1. Select the Semantic Configuration and click on Create new. 
 
     On the pop up do the following:
-    - Give a name to the Semantic Search Config. **For this lab, the name must be default**
+    - Give a name to the Semantic Search Config. **For this lab, the name must be 'default'**
     - Select the Title field and select 'filename'
     - Select the 'content' field and any other relevant fields for Content Fields
     - Select Save
 
 ![](images/Lab3SemSearchConfig.png)
 
-![](images/Lab3SemSearchConfigSave.png)
+Click on **save** again on the index screen.
 
 #### **Step 5 - Perform Semantic Search**
 1. Now, go back to the accelerator url that you retreived from Step 1 and click on **Sample Search Application**.  
