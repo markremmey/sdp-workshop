@@ -45,17 +45,18 @@ There are 2 options for ingesting the data for the pipeline:
 1. Select **Azure Blob Storage** from the dropdown in datasource.
 
 1. Provide a name for datasource and click on **Choose an existing connection**  for **Connection String**. Here the Azure Blob Storage resource created as a part of BPA accelerator already setup will be one of the sources you can choose from.
-    ![selectcosmosdb.png](images/lab3-import-data-1.png)
+    ![lab3-import-data-1.png](images/lab3-import-data-1.png)
 1. After you select your storage account, select the **results** container from the list and click **Select** button. See the screen shot below.
-    ![selectcosmosdb.png](images/lab3-import-data-2.png)
+    ![lab3-import-data-2.png](images/lab3-import-data-2.png)
 
-1. Keep the default for **Managed identity Authentication**, which is **None**. For **Databases** and **Collection** use the dropdown to select the same name as the Cosmos DB you selected at step 15. 
-
-1. Under Query, use the following Query.  The pipeline should match the pipeline name you used in step 3
-    > SELECT * FROM c WHERE c.pipeline = 'YOUR-PIPELINE-NAME' AND c._ts > @HighWaterMark
-
-    ![](images/Lab3LoadData.png)
-
+1. On the Import data screen make sure you have the following:
+    - Your data source as **Azure Blob Storage**
+    - You have provided data source name. For e.g. **storagedatasource**
+    - You selected **JSON** as Parsing mode
+    - Your container name is **results** and 
+    - Your created pipeline name is entered. For instance, if your pipeline name is **pipeline-name** then enter pipeline-name
+    - Keep the default for **Managed identity Authentication**, which is **None** 
+   ![lab3-import-data-3.png](images/lab3-import-data-3.png)
 
 1. Click **Next: Add cognitive skills (Optional)**. This validates and creates the index schema. 
 
