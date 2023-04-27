@@ -42,7 +42,7 @@ There are 2 options for ingesting the data for the pipeline:
 1. Click on **Import Data**. 
     ![selectimportdata.png](/images/selectimportdata.png)
 
-1. Select **Azure Blb Storage** from the dropdown in datasource.
+1. Select **Azure Blob Storage** from the dropdown in datasource.
 
 1. Provide a name for datasource and click on **Choose an existing connection**  for **Connection String**. Here the Azure CosmosDB resource created as a part of BPA accelerator already setup will be one of the sources you can choose from.
     ![selectcosmosdb.png](/images/selectcosmosdb.png)
@@ -82,7 +82,7 @@ There are 2 options for ingesting the data for the pipeline:
 1. Select the Semantic Configuration and click on Create new. 
 
     On the pop up do the following:
-    - Give a name to the Semantic Search Config
+    - Give a name to the Semantic Search Config. **For this lab, the name must be default**
     - Select the Title field and select 'filename'
     - Select the 'content' field and any other relevant fields for Content Fields
     - Select Save
