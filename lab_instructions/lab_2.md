@@ -88,8 +88,11 @@ There are 2 options for ingesting the data for the pipeline:
     - Select Save
 
 ![](images/Lab3SemSearchConfig_default.png)
+It is important that you name your Semantic Search Config for this lab as **default**
 
-Click on **save** again on the index screen.
+![](images/lab3-semantic-config-save.png)
+
+Do not forget to click on **save** again on the index screen. Otherwise the Semantic Search Config will not be applied.
 
 #### **Step 5 - Perform Semantic Search**
 1. Now, go back to the accelerator url that you retreived from Step 1 and click on **Sample Search Application**.  
