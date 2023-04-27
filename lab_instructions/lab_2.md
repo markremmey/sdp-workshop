@@ -98,14 +98,14 @@ Do not forget to click on **save** again on the index screen. Otherwise the Sema
 
 #### **Step 5 - Perform Azure OpenAI Search**
 1. Now, go back to the accelerator url that you retreived from Step 1 and click on **Search Application**.  
-    ![](images/BPAHomepageSampleSearch.png)
+    ![BPAHomepageSampleSearch](images/BPAHomePageSearchApp.png)
 
     This opens the Azure Open AI search application
 
     - Select the index from top drop down. In this case the index created earlier is selected. **azureblob-index**
     - Provide a search query based on your document, like:
         - 'Tell me the 7454 installation instructions'
-     ![](images/Lab5-openai-search.png)
+     ![Lab5-openai-search](images/Lab5-openai-search.png)
      
 #### **Step 6 - Perform Semantic Search**
 1. Now, go back to the accelerator url that you retreived from Step 1 and click on **Sample Search Application**.  
