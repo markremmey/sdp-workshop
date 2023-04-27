@@ -45,9 +45,9 @@ There are 2 options for ingesting the data for the pipeline:
 1. Select **Azure Blob Storage** from the dropdown in datasource.
 
 1. Provide a name for datasource and click on **Choose an existing connection**  for **Connection String**. Here the Azure Blob Storage resource created as a part of BPA accelerator already setup will be one of the sources you can choose from.
-    ![selectcosmosdb.png](/images/lab3-import-data-1.png)
+    ![selectcosmosdb.png](images/lab3-import-data-1.png)
 1. After you select your storage account, select the **results** container from the list and click **Select** button. See the screen shot below.
-    ![selectcosmosdb.png](/images/lab3-import-data-2.png)
+    ![selectcosmosdb.png](images/lab3-import-data-2.png)
 
 1. Keep the default for **Managed identity Authentication**, which is **None**. For **Databases** and **Collection** use the dropdown to select the same name as the Cosmos DB you selected at step 15. 
 
