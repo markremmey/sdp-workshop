@@ -42,8 +42,7 @@ There are 2 options for ingesting the data for the pipeline:
 1. Click on **Import Data**. 
     ![selectimportdata.png](/images/selectimportdata.png)
 
-1. Select **Azure Cosmos DB** from the dropdown in datasource.
-    ![selectazurecosmosdb.png](/images/selectazurecosmosdb.png)
+1. Select **Azure Blb Storage** from the dropdown in datasource.
 
 1. Provide a name for datasource and click on **Choose an existing connection**  for **Connection String**. Here the Azure CosmosDB resource created as a part of BPA accelerator already setup will be one of the sources you can choose from.
     ![selectcosmosdb.png](/images/selectcosmosdb.png)
